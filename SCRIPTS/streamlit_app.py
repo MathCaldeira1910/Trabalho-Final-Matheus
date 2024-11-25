@@ -16,6 +16,10 @@ try:
 except Exception as e:
     print("Erro ao conectar com o banco:", e)
 
+import sqlite3
+conn = sqlite3.connect('banco.db')
+cursor = conn.cursor()
+
 
 st.write("Dados carregados do banco de dados", df_lido)
 
