@@ -3,7 +3,7 @@ import requests
 import pandas as pd
 import plotly.express as px
 
-df = pd.read_csv('../DADOS TRATADOS/Dados_coletados.csv', index_col=0, encoding='utf-8')
+df = pd.read_csv('/caminho/absoluto/para/DADOS TRATADOS/Dados_coletados.csv', index_col=0, encoding='utf-8')
 
 data = {
     "produto": [
