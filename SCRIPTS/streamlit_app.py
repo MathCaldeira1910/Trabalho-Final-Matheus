@@ -3,10 +3,6 @@ import requests
 import pandas as pd
 import plotly.express as px
 
-df = pd.read_csv('../Trabalho-Final-Matheus/DADOS TRATADOS/Dados_coletados.csv', index_col=0, encoding='utf-8')
-
-
-
 data = {
     "produto": [
         "Açucar Native Orgânico Dourado 1kg",
