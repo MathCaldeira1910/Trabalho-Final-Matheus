@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 from sqlalchemy import create_engine
 
-engine = create_engine('sqlite:///banco.db', echo=True)
+engine = create_engine('sqlite:///../DADOS_TRATADOS/banco.db', echo=True)
 
 try:
     df_lido = pd.read_sql('SELECT * FROM dados', con=engine)
